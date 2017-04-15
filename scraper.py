@@ -34,18 +34,6 @@ def get_titles():
 		title_2 = title_1[:-6]
 		titles.append(title_2)
 
-	# urls
-	#for link in links:
-	#	print(link)
-
-	# headlines
-	#for title in titles:
-	#	print(title)
-
-	# scrapes the urls of main articles
-	#for link in links:
-	#	scrape_article(link)
-
 	return titles
 
 def get_urls():
@@ -65,7 +53,6 @@ def get_urls():
 		for a in foo.find_all("a", href=True):
 			prefix = "http://abc7news.com"
 			links.append(prefix+str(a['href']))
-
 
 	return links
 
