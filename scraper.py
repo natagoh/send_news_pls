@@ -8,8 +8,7 @@ def scrape_article(str):
 	html = response.content
 	soup = BeautifulSoup(html, "html.parser")
 	page = soup.find("div", class_="body-text").getText()
-	print(page)
-	return 
+	return page
 
 # run overlord function
 def get_titles():

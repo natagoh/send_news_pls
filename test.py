@@ -25,3 +25,5 @@ print(formatHeadlines(titles))
 #	scrape_article(x)
 
 #print(titles[0])
+
+print(scrape_article(links[1]))
